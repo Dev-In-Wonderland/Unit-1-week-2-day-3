@@ -159,8 +159,8 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     case "blue":
       eyeColor.blue.push(starWarsCharacters[i]);
     break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[i]);
+    case "yellow":
+         eyeColor.yellow.push(starWarsCharacters[i]);
     break;
   case "red":
     eyeColor.red.push(starWarsCharacters[i]);
@@ -183,7 +183,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 let i = 0
 let massaEquipaggio = 0
 
-while (i < starWarsCharacters) {
+while (i < starWarsCharacters.length) {
 
   const massaPersonaggio = parseInt(starWarsCharacters[i].mass)
 
