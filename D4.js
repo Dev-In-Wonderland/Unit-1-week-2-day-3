@@ -1,4 +1,4 @@
-const starWarsCharacters = [
+let starWarsCharacters = [
   {
     name: "Luke Skywalker",
     height: "172",
@@ -116,7 +116,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   characters.push(starWarsCharacters[i].name)
 }
 
-console.log(characters)
+console.log("Esercizio 2: ", characters)
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un array chiamato "femaleCharacters" e inserisci solo oggetti di personaggi femminili con questa struttura di esempio: 
@@ -131,7 +131,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     femaleCharacters.push(starWarsCharacters[i])}
   }
   
-console.log(femaleCharacters)
+console.log("Esercizio 3: ", femaleCharacters)
 
 
 /* ESERCIZIO 4
@@ -144,7 +144,7 @@ const eyeColor = {
   yellow:[],  
   brown:[], 
   red:[], 
-  ['blue-gray']:[]
+  ["blue-gray"]:[]
 }
 
 
@@ -164,8 +164,10 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     break;
   case "red":
     eyeColor.red.push(starWarsCharacters[i]);
+    break;
     case "blue-gray":
-      eyeColor['blue-gray'].push(starWarsCharacters[i]);
+      eyeColor["blue-gray"].push(starWarsCharacters[i]);
+      break;
     case "brown":
       eyeColor.brown.push(starWarsCharacters[i]);
     break;
@@ -175,6 +177,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 }
 }
 
+console.log("Esercizio 5: ", eyeColor)
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio
@@ -196,7 +199,7 @@ if(!isNaN(massaPersonaggio)) {
 
 }
 
-console.log(massaEquipaggio)
+console.log("Esercizio 6: ", massaEquipaggio)
 
 
 
@@ -246,10 +249,13 @@ Usa un for loop per cambiare il valore della proprietà "gender" di alcuni perso
 
 
 for (let i = 0; i < starWarsCharacters.length; i++){
+
    if(starWarsCharacters[i].gender === "n/a"){
     starWarsCharacters[i].gender = "robot"
    }
+
   }
+
   console.log(starWarsCharacters)
 
 
@@ -299,10 +305,10 @@ console.log(person)
 
 let capelli = null
 
-if (person.gender=="female"){
+if (person.gender == "female"){
   gender = "f"
 }
-else if (person.gender=="male"){
+else if (person.gender == "male"){
   gender="m"
 }
 else{
@@ -310,23 +316,23 @@ else{
 }
 
 if (person.hair_color == "n/a"){
-  capelli = "Questo personaggio non ha capelli"
+  capelli = ", non ha capelli"
 }
 else{
-  capelli = "Il colore dei capelli sono " + person.hair_color
+  capelli = ", il colore dei suoi capelli è " + person.hair_color
 }
 
 if (gender == "m"){
-  console.log("Questo personaggio è di sesso maschile. Il suo nome è: ", person.name, capelli, "e il suo colore degli occhi sono ", person.eye_color)
+  console.log("Questo personaggio è di sesso maschile (",gender, "). Il suo nome è: ", person.name, capelli, "e il colore dei suoi occhi è ", person.eye_color)
 }
 
 else if (gender == "f"){
-  console.log("Questo personaggio è di sesso femminile. Il suo nome è: ", person.name, capelli, "e il suo colore degli occhi sono ", person.eye_color)
+  console.log("Questo personaggio è di sesso femminile(", gender, ". Il suo nome è: ", person.name, capelli, "e il suo colore degli occhi è ", person.eye_color)
 }
 
 else {
   
-  console.log("Questo personaggio è di una cosa. Il suo nome è: ", person.name, capelli, "e il suo colore degli occhi sono ", person.eye_color)
+  console.log("Questo personaggio è un", gender, ". Il suo nome è: ", person.name, capelli, "e il suo colore degli occhi sono ", person.eye_color)
 }
 
 
