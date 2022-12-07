@@ -153,63 +153,6 @@ const eyeColor = {
   Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio
 */
 
-/*for (let i = 0; i < starWarsCharacters.length; i++) { 
-  if(starWarsCharacters[i].eye_color === "blue"){
-    eyeColor.blue.push(starWarsCharacters[i])}
-  }
-  
-console.log(eyeColor.blue)
-
-for (let i = 0; i < starWarsCharacters.length; i++) { 
-  if(starWarsCharacters[i].eye_color === "yellow"){
-    eyeColor.yellow.push(starWarsCharacters[i])}
-  }
-  
-console.log(eyeColor.yellow)
-
-for (let i = 0; i < starWarsCharacters.length; i++) { 
-  if(starWarsCharacters[i].eye_color === "brown"){
-    eyeColor.brown.push(starWarsCharacters[i])}
-  }
-  
-console.log(eyeColor.brown)
-
-for (let i = 0; i < starWarsCharacters.length; i++) { 
-  if(starWarsCharacters[i].eye_color === "red"){
-    eyeColor.red.push(starWarsCharacters[i])}
-  }
-  
-console.log(eyeColor.red)
-
-for (let i = 0; i < starWarsCharacters.length; i++) { 
-  if(starWarsCharacters[i].eye_color === "bluegray"){
-    eyeColor.bluegray.push(starWarsCharacters[i])}
-  }
-  
-console.log(eyeColor.bluegray)
-
-
-switch (eyeColor) {
-  case "blue":
-    console.log(eyeColor.blue);
-    break;
-  case "yellow":
-    console.log(eyeColor.yellow);
-    break;
-  case "red":
-    console.log(eyeColor.red);
-    case "bluegray":
-      console.log(eyeColor.bluegray);
-    case "brown":
-      console.log(eyeColor.bluegray);
-    break;
-  default;
-  break;
-  
-}
-*/
-
-
 for (let i = 0; i < starWarsCharacters.length; i++) {
 
     switch (starWarsCharacters[i].eye_color) {
