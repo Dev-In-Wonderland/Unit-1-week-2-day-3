@@ -118,6 +118,20 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 
 console.log("Esercizio 2: ", characters)
 
+
+
+
+
+
+/*     
+
+const characters34 = starWarsCharacters.map (personaggio => personaggio.name)
+
+console.log("eser1-2: ", characters34)
+
+*/ 
+
+
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un array chiamato "femaleCharacters" e inserisci solo oggetti di personaggi femminili con questa struttura di esempio: 
   {name: Leia Organa, hair_color: "brown", eye_color: "brown"}
@@ -258,6 +272,16 @@ for (let i = 0; i < starWarsCharacters.length; i++){
 
   console.log(starWarsCharacters)
 
+/*   let starWarsRobot = starWarsCharacters.map(personaggio => {
+  if (personaggio.gender === "n/a") {
+    return {...personaggio, gender:"robot"}
+    
+  }
+  return personaggio
+})
+console.log("es 8: ", starWarsRobot)
+    */
+
 
 
 /* EXTRA ESERCIZIO 9
@@ -286,6 +310,19 @@ starWarsCharacters.splice(i, 1)
 console.log("Numero di personaggi dopo: ", starWarsCharacters.length)
 
 console.log("Verifica Personaggi dopo il ciclo: ", starWarsCharacters)
+
+/*
+const starWarsWomen = starWarsCharacters.map(personaggio=>{
+  if (personaggio.gender==="female") {
+    delete personaggio
+    
+  }
+  return personaggio
+})
+console.log("eser9: ", starWarsWomen)
+*/
+
+
 
 
 /* EXTRA ESERCIZIO 10
