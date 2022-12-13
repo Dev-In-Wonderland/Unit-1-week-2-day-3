@@ -121,15 +121,15 @@ console.log("Esercizio 2: ", characters)
 
 
 
+/*
 
-
-/*     
+  
 
 const characters34 = starWarsCharacters.map (personaggio => personaggio.name)
 
 console.log("eser1-2: ", characters34)
 
-*/ 
+*/
 
 
 /* ESERCIZIO 3
@@ -272,16 +272,23 @@ for (let i = 0; i < starWarsCharacters.length; i++){
 
   console.log(starWarsCharacters)
 
-/*   let starWarsRobot = starWarsCharacters.map(personaggio => {
+
+
+
+
+/*
+
+
+   let starWarsRobot = starWarsCharacters.map(personaggio => {
   if (personaggio.gender === "n/a") {
     return {...personaggio, gender:"robot"}
     
   }
   return personaggio
 })
-console.log("es 8: ", starWarsRobot)
-    */
+console.log("es 8) ", starWarsRobot)
 
+*/
 
 
 /* EXTRA ESERCIZIO 9
